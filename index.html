@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tan Swee Yang</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/7fb8567017.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo-removebg-preview.png" alt="logo" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#projects-publications">Featured Projects & Publications</a></li>
+                    <li><a href="#contact">Contact Me</a></li>
+                    <i class="fa-solid fa-xmark fa-lg" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars fa-lg" onclick="openmenu()"></i>
+            </nav>
+
+            <div class="header-content">
+                <div class="header-text">
+                    <p>Backend Developer / AI Researcher</p>
+                    <h1>Hi, I am <span id="gradient-text">Tan Swee Yang</span> <br> From Malaysia.</h1>
+                    <a href="#about" class="btn btn2">Explore</a>
+                </div>
+                <div class="header-image">
+                    <img src="images/headspace.gif" alt="headspace">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- -------------------- About ----------------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/languagesorange.jpeg" alt="headspace">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I am a motivated software engineering major with a passion for backend development and machine
+                        learning. I am proficient in Java, Python, and C#.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Machine Learning:</span><br>Reinforcement Learning, Convolutional Neural Network,
+                                Natural Language Processing, Regressions</li>
+                            <li><span>Languages:</span><br>Java, Python, C#, C++, PHP, HTML, CSS, JavaScript</li>
+                            <li><span>Technologies:</span><br>JUnit, Mockito, Git, Maven</li>
+                            <li><span>Tools:</span><br>Eclipse, PyCharm, Jupyter, Visual Studio Code, Visual Studio,
+                                Unity</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>Degree (May 2020 - May
+                                    2024):</span><br>Bachelor Of Science (Honours) Software Engineering at Universiti
+                                Tunku Abdul Rahman</li>
+                            <li><span>Latest GPA:</span><br>3.33/4</li>
+                            <li><span>Coursework:</span><br>Artificial Intelligence, Digital Image Processing,
+                                Probability and Statistics,
+                                Data Structures and Algorithms, Database System Fundamentals, Object Oriented
+                                Programming, Web Application Development, Wireless Application Development
+                            </li>
+                            <li><span>Awards:</span><br>Academic Improvement List</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Internship (Oct 2023 - Jan 2024):</span><br>Trainee at Yokogawa Kontrol (Malaysia)
+                                Sdn Bhd. Responsible
+                                for: <br> a) Assisting in installation, configuration, and integration of implemented
+                                solutions;<br> b) Assisting in controlling technical documentation related to project
+                                and
+                                services rendered;<br> c) Assisting in providing technical assistance related to project
+                                and
+                                services rendered;<br> d) Assisting in doing troubleshooting related to project and
+                                services
+                                rendered.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- -------------------- Featured Projects/Publications ----------------- -->
+    <div id="projects-publications">
+        <div class="container">
+            <h1 class="sub-title">Featured Projects & Publications</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/FER_1.jpeg" alt="project1">
+                    <div class="layer">
+                        <h3>Human-in-the-loop Reinforcement Learning for Emotion Recognition</h3>
+                        <p>Introduces a novel approach to enhance the accuracy of a facial emotion recognition system by
+                            integrating human feedback as a refined reward function into q-learning.</p>
+                        <div class="link-icons">
+                            <a href="documents/HITL FER5_Submitted.pdf" download><i class="fa fa-file-pdf-o fa-lg"
+                                    aria-hidden="true" style="color: #000000;"></i></a>
+                            <a
+                                href="https://github.com/tansweeyang/Human-in-the-loop-Reinforcement-Learning-for-Emotion-Recognition"><i
+                                    class="fa fa-github fa-lg" aria-hidden="true" style="color: #000000;"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/IAmNotARobotScreesnshot.png" alt="project2">
+                    <div class="layer">
+                        <h3>I'm not a robot </h3>
+                        <p>A multipurpose discord bot equipped with utility tools. Major tools includes a translator, a
+                            dictionary, a currency coverter and a timer.</p>
+                        <div class="link-icons">
+                            <a
+                                href="https://discord.com/oauth2/authorize?client_id=978649404816916521&permissions=8&scope=bot"><i
+                                    class="fa-brands fa-discord fa-lg " aria-hidden="true"
+                                    style="color: #000000;"></i></a>
+                            <a href="https://github.com/tansweeyang/Im-not-a-robot"><i class="fa fa-github fa-lg"
+                                    aria-hidden="true" style="color: #000000;"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/Invasion.png" alt="project3">
+                    <div class="layer">
+                        <h3>Invasion</h3>
+                        <p>A 2D shooter game about alien invasion made in Unity.</p>
+                        <div class="link-icons">
+                            <a href="exe/Invasion.exe" download><i class="fa fa-download fa-lg" aria-hidden="true"
+                                    style="color: #000000;"></i></a>
+                            <a href="https://github.com/tansweeyang/Invasion"><i class="fa fa-github fa-lg"
+                                    aria-hidden="true" style="color: #000000;"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a href="https://github.com/tansweeyang" class="btn">See More on GitHub</a>
+        </div>
+    </div>
+
+    <!-- -------------------- Featured Projects/Publications ----------------- -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p> <i class="fa-solid fa-envelope"></i>tansweeyang.softwareengineer@gmail.com</p>
+                    <p> <i class="fa-solid fa-phone"></i> (+60)11-18781076</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/tansweeyang/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/tansweeyang"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                    <a href="documents/TanSweeYang_Resume_21-6-2023.pdf" download class="btn btn2">Download Resume</a>
+                </div>
+                <div class="contact-right">
+                    <form action="https://formsubmit.co/el/tansweeyang.softwareengineer@gmail.com" method="POST">
+                        <input type="text" name="name" placeholder="Your Name" required>
+                        <input type="text" name="email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message" required></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu() {
+            sidemenu.style.right = "0";
+        }
+        function closemenu() {
+            sidemenu.style.right = "-300px";
+        }
+    </script>
+</body>
+
+</html>
