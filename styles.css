@@ -433,6 +433,9 @@ nav .fa-solid{
     .contact-right form{
         margin-top: 20%;
     }
+    form input, form textarea{
+        width: 95%;
+    }
 }
 
 
