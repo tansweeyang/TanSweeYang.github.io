@@ -10,7 +10,7 @@ html{
 }
 #header {
     width: 100%;
-    height: auto;
+    height: 100svh;
     background-color: whitesmoke;
     background-size: cover;
     background-position: center;
